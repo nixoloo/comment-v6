@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Workspace - Executive Comment Engineering</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container wide">
+  <h2>Comment Workspace</h2>
+  <div class="grid">
+    <div class="panel">
+      <h3>Executive Post</h3>
+      <textarea id="post" placeholder="Paste the executive post here..."></textarea>
+    </div>
+    <div class="panel">
+      <h3>Choose your stance</h3>
+      <select id="stance">
+        <option>Clarifier</option>
+        <option>Tradeoff Noticer</option>
+        <option>Quiet Skeptic</option>
+        <option>Operator</option>
+      </select>
+      <p class="muted">This shapes how your thinking is perceived.</p>
+    </div>
+    <div class="panel">
+      <h3>Your rough thought</h3>
+      <textarea id="draft" placeholder="Write a messy, incomplete thought..."></textarea>
+      <button onclick="tighten()">Tighten Comment</button>
+      <h4>Refined comment</h4>
+      <div id="output" class="output-box muted"></div>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
