@@ -13,7 +13,7 @@ async function tighten() {
   output.innerText = "Refining comment...";
 
   try {
-    const res = await fetch("/api/refine-comment", {
+    const res = await fetch("https://comment-v6.vercel.app/api/refine-comment", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ draft, stance, post }),
